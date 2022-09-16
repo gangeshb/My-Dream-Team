@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.App.Gangesh.Shubham">
+
+    <uses-permission android:name="android.name.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shakib"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.App.Gangesh.Shubham.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.App.Gangesh.Shubham.SignInActivity" />
+        <activity
+            android:name="com.App.Gangesh.Shubham.TabbedActiviy"
+            android:label="@string/title_activity_tabbed_activiy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.App.Gangesh.Shubham.WelcomeActiviy" />
+        <activity android:name="com.App.Gangesh.Shubham.CreateAccountActivity" />
+        <activity android:name="com.App.Gangesh.Shubham.CreatingTeam1" />
+        <activity android:name="com.App.Gangesh.Shubham.PlayerList" />
+        <activity android:name="com.App.Gangesh.Shubham.CreatingTeam2" />
+        <activity android:name="com.App.Gangesh.Shubham.FilterActivity" />
+        <activity android:name="com.App.Gangesh.Shubham.PlayerStat" />
+        <activity android:name="com.App.Gangesh.Shubham.TeamStats" />
+        <activity android:name="com.App.Gangesh.Shubham.Fixture" />
+        <activity android:name="com.App.Gangesh.Shubham.PopularPlayers" />
+        <activity android:name="com.App.Gangesh.Shubham.OurTeam" />
+        <activity android:name="com.App.Gangesh.Shubham.TeamViewer" />
+        <activity android:name="com.App.Gangesh.Shubham.ViewTeam" />
+        <service android:name="com.App.Gangesh.Shubham.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.App.Gangesh.Shubham.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.App.Gangesh.Shubham.OtherTeams" />
+        <activity android:name="com.App.Gangesh.Shubham.RulesActivity"></activity>
+        <activity android:name="com.App.Gangesh.Shubham.OurList"></activity>
+    </application>
+
+</manifest>
